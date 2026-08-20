@@ -101,6 +101,10 @@ public class Nurse extends Person {
 
         return assignedPatientIds.size();
     }
+    public boolean isNightShift() {
+
+        return shift.equalsIgnoreCase("Night");
+    }
 
 
 
