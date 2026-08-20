@@ -39,7 +39,25 @@ public class Patient extends Person {
         super(id, firstName, lastName);
     }
 
+    public String getBloodGroup() {
+        return bloodGroup;
+    }
 
+    public String getEmergencyContact() {
+        return emergencyContact;
+    }
+
+    public String getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public double getOutstandingBalance() {
+        return outstandingBalance;
+    }
+
+    public boolean isInsured() {
+        return isInsured;
+    }
 
 
 
