@@ -90,6 +90,23 @@ public class Doctor extends Person {
 
         System.out.println("========================================");
     }
+    public void addSlot(String slot) {
+
+        if (!availableSlots.contains(slot)) {
+            availableSlots.add(slot);
+        }
+    }
+
+    public void removeSlot(String slot) {
+
+        availableSlots.remove(slot);
+    }
+
+    public boolean hasSlot(String slot) {
+
+        return availableSlots.contains(slot);
+    }
+
 
 
 
