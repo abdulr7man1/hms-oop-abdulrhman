@@ -24,6 +24,22 @@ public class Nurse extends Person {
         this.assignedPatientIds = new ArrayList();
         this.yearsOfService = yearsOfService;
     }
+    @Override
+    public void displayInfo() {
+
+        super.displayInfo();
+
+        System.out.println("========================================");
+        System.out.println("             NURSE DETAILS              ");
+        System.out.println("========================================");
+
+        System.out.println("Department ID:     " + departmentId);
+        System.out.println("Shift:             " + shift);
+        System.out.println("Assigned Patients: " + assignedPatientIds);
+        System.out.println("Years of Service:  " + yearsOfService);
+
+        System.out.println("========================================");
+    }
 
 
 
