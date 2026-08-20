@@ -57,6 +57,16 @@ public class MedicalRecord implements Displayable {
     public boolean isConfidential() {
         return isConfidential;
     }
+    public void setRecordId(String recordId) {
+
+        if (recordId == null || recordId.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Record ID cannot be empty."
+            );
+        }
+
+        this.recordId = recordId;
+    }
 
 
 
