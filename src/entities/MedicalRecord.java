@@ -77,6 +77,16 @@ public class MedicalRecord implements Displayable {
 
         this.patientId = patientId;
     }
+    public void setDoctorId(String doctorId) {
+
+        if (doctorId == null || doctorId.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Doctor ID cannot be empty."
+            );
+        }
+
+        this.doctorId = doctorId;
+    }
 
 
 
