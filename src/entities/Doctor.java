@@ -117,6 +117,12 @@ public class Doctor extends Person {
 
         return assignedPatientIds.size();
     }
+    public void raiseFee(double amount) {
+
+        if (amount > 0) {
+            consultationFee = consultationFee + amount;
+        }
+    }
 
 
 
