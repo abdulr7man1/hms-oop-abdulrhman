@@ -40,6 +40,17 @@ public class Nurse extends Person {
 
         System.out.println("========================================");
     }
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public String getShift() {
+        return shift;
+    }
+
+    public int getYearsOfService() {
+        return yearsOfService;
+    }
 
 
 
