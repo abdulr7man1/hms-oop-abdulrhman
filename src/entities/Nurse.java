@@ -61,6 +61,20 @@ public class Nurse extends Person {
 
         this.departmentId = departmentId;
     }
+    public void setShift(String shift) {
+
+        if (shift == null ||
+                (!shift.equalsIgnoreCase("Morning")
+                        && !shift.equalsIgnoreCase("Evening")
+                        && !shift.equalsIgnoreCase("Night"))) {
+
+            throw new IllegalArgumentException(
+                    "Shift must be Morning, Evening, or Night."
+            );
+        }
+
+        this.shift = shift;
+    }
 
 
 
