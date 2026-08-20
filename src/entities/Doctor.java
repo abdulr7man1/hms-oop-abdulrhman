@@ -47,7 +47,31 @@ public class Doctor extends Person {
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
+    public void setExperienceYears(int experienceYears) {
 
+        if (experienceYears < 0) {
+            throw new IllegalArgumentException(
+                    "Experience years cannot be negative."
+            );
+        }
+
+        this.experienceYears = experienceYears;
+    }
+
+    public void setConsultationFee(double consultationFee) {
+
+        if (consultationFee < 0) {
+            throw new IllegalArgumentException(
+                    "Consultation fee cannot be negative."
+            );
+        }
+
+        this.consultationFee = consultationFee;
+    }
+
+    public void setOnCall(boolean onCall) {
+        isOnCall = onCall;
+    }
 
 
 
