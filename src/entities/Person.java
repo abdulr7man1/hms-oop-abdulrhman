@@ -179,15 +179,59 @@ public class Person implements Displayable {
         System.out.println("========================================");
     }
 
+    @Override
+    public void displaySummary() {
 
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + getFullName());
+    }
 
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 
+    @Override
+    public String toString() {
 
+        return "Person{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", gender='" + gender + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", nationalId='" + nationalId + '\'' +
+                ", age=" + age +
+                ", activeStatus=" + activeStatus +
+                '}';
+    }
 
+    @Override
+    public boolean equals(Object obj) {
 
+        if (this == obj) {
+            return true;
+        }
 
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
 
+        Person person = (Person) obj;
 
+        return Objects.equals(this.id, person.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    public boolean isAdult() {
+        return age >= 18;
+    }
 }
 
 
