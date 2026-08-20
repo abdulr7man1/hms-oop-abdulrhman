@@ -85,7 +85,22 @@ public class Nurse extends Person {
 
         this.yearsOfService = yearsOfService;
     }
+    public void assignPatient(String patientId) {
 
+        if (!assignedPatientIds.contains(patientId)) {
+            assignedPatientIds.add(patientId);
+        }
+    }
+
+    public void unassignPatient(String patientId) {
+
+        assignedPatientIds.remove(patientId);
+    }
+
+    public int getPatientLoad() {
+
+        return assignedPatientIds.size();
+    }
 
 
 
