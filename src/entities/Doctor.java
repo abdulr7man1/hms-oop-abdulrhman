@@ -106,6 +106,17 @@ public class Doctor extends Person {
 
         return availableSlots.contains(slot);
     }
+    public void assignPatient(String patientId) {
+
+        if (!assignedPatientIds.contains(patientId)) {
+            assignedPatientIds.add(patientId);
+        }
+    }
+
+    public int getPatientLoad() {
+
+        return assignedPatientIds.size();
+    }
 
 
 
