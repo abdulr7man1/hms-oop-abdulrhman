@@ -75,6 +75,17 @@ public class Nurse extends Person {
 
         this.shift = shift;
     }
+    public void setYearsOfService(int yearsOfService) {
+
+        if (yearsOfService < 0) {
+            throw new IllegalArgumentException(
+                    "Years of service cannot be negative."
+            );
+        }
+
+        this.yearsOfService = yearsOfService;
+    }
+
 
 
 
