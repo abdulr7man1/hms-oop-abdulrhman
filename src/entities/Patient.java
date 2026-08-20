@@ -146,7 +146,14 @@ public class Patient extends Person {
     public void clearBalance() {
         outstandingBalance = 0.0;
     }
+    public void updateContact(String phoneNumber) {
+        setPhoneNumber(phoneNumber);
+    }
 
+    public void updateContact(String phoneNumber, String email) {
+        setPhoneNumber(phoneNumber);
+        setEmail(email);
+    }
 
 
 
