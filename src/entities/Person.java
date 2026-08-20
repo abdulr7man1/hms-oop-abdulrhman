@@ -1,3 +1,4 @@
+
 package entities;
 
 import interfaces.Displayable;
@@ -5,7 +6,6 @@ import interfaces.Displayable;
 import java.util.Objects;
 
 public class Person implements Displayable {
-
 
     private String id;
     private String firstName;
@@ -18,8 +18,6 @@ public class Person implements Displayable {
     private String nationalId;
     private int age;
     private boolean activeStatus;
-
-
 
     public Person(String id, String firstName, String lastName,
                   String dateOfBirth, String gender, String phoneNumber,
@@ -42,6 +40,15 @@ public class Person implements Displayable {
 
 
 
+
+
+
+
+
+
+
+
+}
 
 
 
