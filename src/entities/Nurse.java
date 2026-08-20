@@ -51,6 +51,16 @@ public class Nurse extends Person {
     public int getYearsOfService() {
         return yearsOfService;
     }
+    public void setDepartmentId(String departmentId) {
+
+        if (departmentId == null || departmentId.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Department ID cannot be empty."
+            );
+        }
+
+        this.departmentId = departmentId;
+    }
 
 
 
