@@ -155,31 +155,6 @@ public class Patient extends Person {
         setEmail(email);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
