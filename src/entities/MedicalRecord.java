@@ -87,6 +87,32 @@ public class MedicalRecord implements Displayable {
 
         this.doctorId = doctorId;
     }
+    public void setVisitDate(String visitDate) {
+
+        if (visitDate == null || visitDate.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Visit date cannot be empty."
+            );
+        }
+
+        this.visitDate = visitDate;
+    }
+
+    public void setDiagnosis(String diagnosis) {
+        this.diagnosis = diagnosis;
+    }
+
+    public void setPrescription(String prescription) {
+        this.prescription = prescription;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    public void setConfidential(boolean confidential) {
+        isConfidential = confidential;
+    }
 
 
 
