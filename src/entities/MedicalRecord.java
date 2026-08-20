@@ -26,6 +26,37 @@ public class MedicalRecord implements Displayable {
         this.notes = notes;
         this.isConfidential = isConfidential;
     }
+    public String getRecordId() {
+        return recordId;
+    }
+
+    public String getPatientId() {
+        return patientId;
+    }
+
+    public String getDoctorId() {
+        return doctorId;
+    }
+
+    public String getVisitDate() {
+        return visitDate;
+    }
+
+    public String getDiagnosis() {
+        return diagnosis;
+    }
+
+    public String getPrescription() {
+        return prescription;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public boolean isConfidential() {
+        return isConfidential;
+    }
 
 
 
