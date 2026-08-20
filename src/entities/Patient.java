@@ -111,6 +111,28 @@ public class Patient extends Person {
 
         System.out.println("========================================");
     }
+    public void addAllergy(String allergy) {
+        allergies.add(allergy);
+    }
+
+    public boolean hasAllergy(String allergy) {
+        return allergies.contains(allergy);
+    }
+
+    public void listAllergies() {
+
+        System.out.println("Allergies:");
+
+        if (allergies.isEmpty()) {
+            System.out.println("No allergies recorded.");
+        } else {
+
+            for (Object allergy : allergies) {
+                System.out.println("- " + allergy);
+            }
+        }
+    }
+
 
 
 
