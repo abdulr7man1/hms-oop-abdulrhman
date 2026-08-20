@@ -44,6 +44,9 @@ public class Doctor extends Person {
     public boolean isOnCall() {
         return isOnCall;
     }
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
+    }
 
 
 
