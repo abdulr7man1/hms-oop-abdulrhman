@@ -123,6 +123,25 @@ public class Doctor extends Person {
             consultationFee = consultationFee + amount;
         }
     }
+    public void updateFee(double fee) {
+
+        setConsultationFee(fee);
+    }
+
+    public void updateFee(double fee, String reason) {
+
+        if (reason == null || reason.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Reason cannot be empty."
+            );
+        }
+
+        setConsultationFee(fee);
+
+        System.out.println("Consultation fee updated.");
+        System.out.println("Reason: " + reason);
+    }
+
 
 
 
