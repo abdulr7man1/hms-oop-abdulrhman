@@ -29,6 +29,21 @@ public class Doctor extends Person {
         this.assignedPatientIds = new ArrayList();
         this.isOnCall = isOnCall;
     }
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public int getExperienceYears() {
+        return experienceYears;
+    }
+
+    public double getConsultationFee() {
+        return consultationFee;
+    }
+
+    public boolean isOnCall() {
+        return isOnCall;
+    }
 
 
 
