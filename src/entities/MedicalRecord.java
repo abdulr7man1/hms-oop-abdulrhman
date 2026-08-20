@@ -140,7 +140,14 @@ public class MedicalRecord implements Displayable {
                         " | Diagnosis: " + diagnosis
         );
     }
+    public void appendNote(String extraNote) {
 
+        if (notes == null || notes.isEmpty()) {
+            notes = extraNote;
+        } else {
+            notes = notes + " " + extraNote;
+        }
+    }
 
 
 
