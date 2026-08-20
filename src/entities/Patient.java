@@ -37,9 +37,6 @@ public class Patient extends Person {
     public Patient(String id, String firstName, String lastName) {
         super(id, firstName, lastName);
 
-        // Modification from Task 1.2:
-        // Initialize the collections so they can be used
-        // even when the basic constructor is used.
         this.allergies = new ArrayList();
         this.recordIds = new ArrayList();
         this.outstandingBalance = 0.0;
@@ -64,6 +61,40 @@ public class Patient extends Person {
     public boolean isInsured() {
         return isInsured;
     }
+    public void setBloodGroup(String bloodGroup) {
+        this.bloodGroup = bloodGroup;
+    }
+
+    public void setEmergencyContact(String emergencyContact) {
+        this.emergencyContact = emergencyContact;
+    }
+
+    public void setRegistrationDate(String registrationDate) {
+
+        if (registrationDate == null || registrationDate.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Registration date cannot be empty."
+            );
+        }
+
+        this.registrationDate = registrationDate;
+    }
+
+    public void setOutstandingBalance(double outstandingBalance) {
+
+        if (outstandingBalance < 0) {
+            throw new IllegalArgumentException(
+                    "Outstanding balance cannot be negative."
+            );
+        }
+
+        this.outstandingBalance = outstandingBalance;
+    }
+
+    public void setInsured(boolean insured) {
+        isInsured = insured;
+    }
+
 
 
 
