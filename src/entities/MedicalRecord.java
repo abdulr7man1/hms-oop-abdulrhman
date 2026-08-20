@@ -12,16 +12,6 @@ public class MedicalRecord implements Displayable {
     private String notes;
     private boolean isConfidential;
 
-    private String recordId;
-    private String patientId;
-    private String doctorId;
-    private String visitDate;
-    private String diagnosis;
-    private String prescription;
-    private String notes;
-    private boolean isConfidential;
-
-    // Task 1.5 - Full Constructor
     public MedicalRecord(String recordId, String patientId,
                          String doctorId, String visitDate,
                          String diagnosis, String prescription,
