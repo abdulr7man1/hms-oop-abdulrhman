@@ -148,6 +148,10 @@ public class MedicalRecord implements Displayable {
             notes = notes + " " + extraNote;
         }
     }
+    public void markConfidential() {
+
+        isConfidential = true;
+    }
 
 
 
