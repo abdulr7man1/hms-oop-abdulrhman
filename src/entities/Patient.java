@@ -45,6 +45,26 @@ public class Patient extends Person {
         this.outstandingBalance = 0.0;
         this.isInsured = false;
     }
+    public String getBloodGroup() {
+        return bloodGroup;
+    }
+
+    public String getEmergencyContact() {
+        return emergencyContact;
+    }
+
+    public String getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public double getOutstandingBalance() {
+        return outstandingBalance;
+    }
+
+    public boolean isInsured() {
+        return isInsured;
+    }
+
 
 
 
