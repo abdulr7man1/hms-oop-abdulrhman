@@ -34,6 +34,17 @@ public class Patient extends Person {
         this.outstandingBalance = outstandingBalance;
         this.isInsured = isInsured;
     }
+    public Patient(String id, String firstName, String lastName) {
+        super(id, firstName, lastName);
+
+        // Modification from Task 1.2:
+        // Initialize the collections so they can be used
+        // even when the basic constructor is used.
+        this.allergies = new ArrayList();
+        this.recordIds = new ArrayList();
+        this.outstandingBalance = 0.0;
+        this.isInsured = false;
+    }
 
 
 
