@@ -37,7 +37,20 @@ public class Person implements Displayable {
         this.activeStatus = activeStatus;
     }
 
+    public Person(String id, String firstName, String lastName) {
 
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = "";
+        this.gender = "";
+        this.phoneNumber = "";
+        this.email = "";
+        this.address = "";
+        this.nationalId = "";
+        this.age = 0;
+        this.activeStatus = true;
+    }
 
 
 
