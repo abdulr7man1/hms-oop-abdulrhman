@@ -59,6 +59,39 @@ public class Patient extends Person {
         return isInsured;
     }
 
+    public void setBloodGroup(String bloodGroup) {
+        this.bloodGroup = bloodGroup;
+    }
+
+    public void setEmergencyContact(String emergencyContact) {
+        this.emergencyContact = emergencyContact;
+    }
+
+    public void setRegistrationDate(String registrationDate) {
+
+        if (registrationDate == null || registrationDate.trim().isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Registration date cannot be empty."
+            );
+        }
+
+        this.registrationDate = registrationDate;
+    }
+
+    public void setOutstandingBalance(double outstandingBalance) {
+
+        if (outstandingBalance < 0) {
+            throw new IllegalArgumentException(
+                    "Outstanding balance cannot be negative."
+            );
+        }
+
+        this.outstandingBalance = outstandingBalance;
+    }
+
+    public void setInsured(boolean insured) {
+        isInsured = insured;
+    }
 
 
 
