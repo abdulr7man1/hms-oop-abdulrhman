@@ -1,4 +1,11 @@
 package entities;
-// ....
-public class Person {
-}
+
+public class Person implements Displayable {
+
+
+
+
+
+
+
+
