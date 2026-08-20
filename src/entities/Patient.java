@@ -132,6 +132,14 @@ public class Patient extends Person {
             }
         }
     }
+    public void addRecordId(String recordId) {
+        recordIds.add(recordId);
+    }
+
+    public int getRecordCount() {
+        return recordIds.size();
+    }
+
 
 
 
