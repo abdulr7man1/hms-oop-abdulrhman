@@ -113,6 +113,23 @@ public class MedicalRecord implements Displayable {
     public void setConfidential(boolean confidential) {
         isConfidential = confidential;
     }
+    public void displayInfo() {
+
+        System.out.println("========================================");
+        System.out.println("           MEDICAL RECORD               ");
+        System.out.println("========================================");
+
+        System.out.println("Record ID:      " + recordId);
+        System.out.println("Patient ID:     " + patientId);
+        System.out.println("Doctor ID:      " + doctorId);
+        System.out.println("Visit Date:     " + visitDate);
+        System.out.println("Diagnosis:      " + diagnosis);
+        System.out.println("Prescription:   " + prescription);
+        System.out.println("Notes:          " + notes);
+        System.out.println("Confidential:   " + isConfidential);
+
+        System.out.println("========================================");
+    }
 
 
 
