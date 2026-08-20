@@ -94,7 +94,23 @@ public class Patient extends Person {
     public void setInsured(boolean insured) {
         isInsured = insured;
     }
+    @Override
+    public void displayInfo() {
 
+        super.displayInfo();
+
+        System.out.println("========================================");
+        System.out.println("             PATIENT DETAILS            ");
+        System.out.println("========================================");
+
+        System.out.println("Blood Group:         " + bloodGroup);
+        System.out.println("Emergency Contact:   " + emergencyContact);
+        System.out.println("Registration Date:   " + registrationDate);
+        System.out.println("Outstanding Balance: " + outstandingBalance);
+        System.out.println("Insured:             " + isInsured);
+
+        System.out.println("========================================");
+    }
 
 
 
