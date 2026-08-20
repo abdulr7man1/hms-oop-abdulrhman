@@ -139,7 +139,13 @@ public class Patient extends Person {
     public int getRecordCount() {
         return recordIds.size();
     }
+    public void addToBalance(double amount) {
+        outstandingBalance += amount;
+    }
 
+    public void clearBalance() {
+        outstandingBalance = 0.0;
+    }
 
 
 
